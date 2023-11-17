@@ -8,8 +8,8 @@ def PrintArray(array):
 def LinearSearch(Array, Input):
     global count
     count = 0
-    for i in range(0, len(Array)):
-        if Array[i] == Input:
+    for i in Array:
+        if int(i) == Input:
             count += 1
     return count
 
