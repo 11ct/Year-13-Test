@@ -1,11 +1,10 @@
-ID = ""
-MaxSpeed = 0
-CurrentSpeed = 0
-IncreaseAmount = 0
-HorizontalPosition = 0
-
-
 class Vehicles:
+    #DECLARE ID : STRING
+    #DECLARE MaxSpeed : INTEGER
+    #DECLARE CurrentSpeed : INTEGER
+    #DECLARE IncreaseAmount : INTEGER
+    #DECLARE HorizontalPosition : INTEGER
+
     def __init__(self, ID, MaxSpeed, IncreaseAmount, CurrentSpeed = 0, HorizontalPosition = 0):
         self.__ID = ID
         self.__MaxSpeed = MaxSpeed
@@ -16,10 +15,10 @@ class Vehicles:
     def GetCurrentSpeed(self):
         return self.__CurrentSpeed
     
-    def IncreaseAmount(self):
+    def GetIncreaseAmount(self):
         return self.__IncreaseAmount
     
-    def HorizontalPosition(self):
+    def GetHorizontalPosition(self):
         return self.__HorizontalPosition
     
     def GetMaxSpeed(self):
